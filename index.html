@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Imazh Branding Studio">
+
+    <link rel="icon" type="image/x-icon" href="./images/Daneshgah_shiraz.jpg">
+
+    <title>پژواک</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./css/splide.min.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
+</head>
+
+<body id="landing-page">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">کلینیک پژواک</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" aria-current="page" href="./index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./advisors.html">لیست مشاوران</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./workshops.html">کارگاه ها</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./news.html">اخبار و اعلامیه</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./about-us.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./contact-us.html">تماس با ما</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <i id="searchBarOpen" class="bi bi-search btn"></i>
+                    <a href="./reservation/date.html">
+                        <button class="btn text-white">نوبت دهی آنلاین</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="searchNav w-100 bg-white navbar closed">
+            <div class="position-relative w-100">
+                <div class="position-relative mx-auto">
+                    <input class="text-black bg-transparent p-3" placeholder="جستجوی نام پزشک، تخصص و خدمت پزشکی" />
+                    <i class="bi bi-search ms-3"></i>
+                </div>
+                <button id="searchBarClose" class="btn-close"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div id="main-banner" class="w-100 d-flex flex-column align-items-center">
+            <h1 class="text-white">مرکز مشاوره تخصصی پژواک</h1>
+            <p class="text-white mb-4 mt-2">گفتگوی آنلاین با مشاوران متخصص در هر زمان</p>
+            <div class="position-relative mt-2 mb-5">
+                <input class="text-white bg-transparent p-3" placeholder="جستجوی نام پزشک، تخصص و خدمت پزشکی" />
+                <i class="bi bi-search ms-3 text-white"></i>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/carouse-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/carousel-2.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev ms-md-5 ms-0" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next me-md-5 me-0" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container text-center pt-3 pb-5">
+            <h2 class="text-black mt-5 mb-3">خدمات کلینیک</h2>
+            <p class="header-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                است.</p>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">کارگاه روانشناسی</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره ازدواج</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره خانواده</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره کودک و نوجوان</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره حضوری</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره آنلاین</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره کودک و نوجوان</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <img class="my-4" src="./images/service-frame.png" alt="پژواک،خدمات" />
+                            <h3 class="card-title mb-3">مشاوره کودک و نوجوان</h3>
+                            <p class="card-text">مشاوره کودک و نوجوان امری حیاتی و ضروری برای کودک و نوجوانانی است که در
+                                مرحله رشد قرار دارند چرا که آینده آنان بستگی به این دوره دارد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- َAdvisors -->
+    <section id="advisors">
+        <div class="container text-center splide pt-3 pb-5">
+            <h2 class="text-black mt-5 mb-3">مشاوران ما</h2>
+            <p class="header-p">کلینیک پژواک همیشه در تلاش بوده تا بهترین مشاوران و روانشناسان را گرد هم آورد تا بهترین
+                خدمات را به شما عزیزان ارائه دهیم</p>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="card splide__slide">
+                        <div class="card-body p-3">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="card-body p-4">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="card-body p-4">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="card-body p-4">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="card-body p-4">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="card-body p-4">
+                            <img class="mb-3 mt-2" src="./images/advisor-frame.png" alt="پژواک،مشاور" />
+                            <h3 class="card-title mb-3">پروفسور محمد علی گودرزی</h3>
+                            <p class="card-text">درمان اختلالات هویتی</p>
+                            <div class="mb-3">
+                                <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                <span class="card-text">125 نفر</span>
+                            </div>
+                            <span class="muted">۱۷۶۵ مشاوره آنلاین موفق</span>
+                            <a href="./advisor.html">
+                                <button class="btn mt-3 w-100">دریافت مشاوره</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container text-center splide pt-3 pb-5">
+            <h2 class="text-black mt-5 mb-3">گالری تصاویر کلینیک</h2>
+            <div class="splide__track pt-4">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./images/gallery-1.png" alt="پژواک،گالری" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/gallery-2.png" alt="پژواک،گالری" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/gallery-1.png" alt="پژواک،گالری" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/gallery-2.png" alt="پژواک،گالری" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/gallery-1.png" alt="پژواک،گالری" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/gallery-2.png" alt="پژواک،گالری" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops -->
+    <section id="workshops">
+        <div class="container splide text-center pt-3 pb-5">
+            <h2 class="text-black mt-5 mb-3">کارگاه ها</h2>
+            <p class="header-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                است.</p>
+            <div class="splide__track text-end">
+                <ul class="splide__list">
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-1.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-4 pt-2">
+                            <h3 class="card-title mb-3">کارگاه آموزشی آزمون هوش استندفورد بینه ویرایش پنجم</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-2.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-4 pt-2">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-1.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-4 pt-2">
+                            <h3 class="card-title mb-3">کارگاه آموزشی آزمون هوش استندفورد بینه ویرایش پنجم</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-2.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-4 pt-2">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-1.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-3 pt-2">
+                            <h3 class="card-title mb-3">کارگاه آموزشی آزمون هوش استندفورد بینه ویرایش پنجم</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <img class="card-img-top p-3" src="./images/workshop-2.png" alt="پژواک،کارگاه" />
+                        <div class="card-body p-4 pt-2">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="bi bi-person-circle"></i>
+                                <span>مدرس: جناب آقای دکتر حجت پیرزادی</span>
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-calendar-week"></i>
+                                <span>۳۰ اردیبهشت ۱۴۰۱</span>
+                            </div>
+                            <a href="./workshop.html">
+                                <button class="btn mt-3 w-100">مشاهده جزییات کارگاه و ثبت نام</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes -->
+    <section id="notes">
+        <div class="container text-center pt-3 pb-5">
+            <h2 class="text-black mt-3 mb-3">پیام مشاوران</h2>
+            <p class="header-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                است.</p>
+            <div class="slider-wrap w-100 position-relative">
+                <div id="card-slider">
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card not-hover w-100 mb-3 p-sm-4 p-2">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-12">
+                                <img src="./images/advisor.png" alt="پژواک،نکته" />
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                    <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                    <p class="card-text mb-2 mt-sm-4 mt-2">
+                                        روان‌شناسی کودک و نوجوان تلاش می‌کند ابعاد مختلف رشدی فرزند شما را مطالعه کند و
+                                        نیازهای او را در هر مرحله رشدی بررسی کند، سبک‌های فرزند پروری را به والدین
+                                        بیاموزد و مشکلات رفتاری یا روانی کودکان و نوجوانان را پیشگیری یا درمان کند.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+        <div class="container text-center pt-3 pb-5">
+            <h2 class="text-black mt-5 mb-3">اخبار و اطلاعیه ها</h2>
+            <p class="header-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                است.</p>
+            <div class="row align-items-center justify-content-center text-end g-4">
+                <div class="col-xl-3 col-lg-4 col-md-10 col-11">
+                    <a href="./news-id.html" class="card">
+                        <img class="card-img-top p-3" src="./images/news-1.png" alt="پژواک،خدمات" />
+                        <div class="card-body p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                            <p class="card-text text-black">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                با
+                                استفاده از
+                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-10 col-11">
+                    <a href="./news-id.html" class="card image-card position-relative">
+                        <img class="w-100" src="./images/news-2.png" alt="پژواک،اخبار،اطلاعیه" />
+                        <div class="backdrop"></div>
+                        <div class="card-body text-white p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock text-white"></i>
+                                <span class="text-white">۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-10 col-11">
+                    <a href="./news-id.html" class="card">
+                        <img class="card-img-top p-3" src="./images/news-3.png" alt="پژواک،خدمات" />
+                        <div class="card-body p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                            <p class="card-text text-black">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                با
+                                استفاده از
+                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-10 col-11">
+                    <a href="./news-id.html" class="card image-card position-relative">
+                        <img class="w-100" src="./images/news-4.png" alt="پژواک،اخبار،اطلاعیه" />
+                        <div class="backdrop"></div>
+                        <div class="card-body text-white p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock text-white"></i>
+                                <span class="text-white">۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <a href="./news-id.html" class="card">
+                        <img class="card-img-top p-3" src="./images/news-5.png" alt="پژواک،خدمات" />
+                        <div class="card-body p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                            <p class="card-text text-black">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                با
+                                استفاده از
+                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <a href="./news-id.html" class="card">
+                        <img class="card-img-top p-3" src="./images/news-6.png" alt="پژواک،خدمات" />
+                        <div class="card-body p-4 pt-1">
+                            <h3 class="card-title mb-3">کاربرد مدل نوین تخصصی در انتخاب رشته تحصیلی
+                                دانش آموزان و دانشجویان</h3>
+                            <div class="mb-2">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>۱۴۰۱/۰۲/۱۷</span>
+                            </div>
+                            <p class="card-text text-black">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                با
+                                استفاده از
+                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container pt-3 pb-5 mt-5 text-xl-end text-center">
+            <a class="navbar-brand" href="./index.html">کلینیک پژواک</a>
+            <div class="row justify-content-center gx-0 gx-lg-4 gy-4 mt-2">
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <p>کلینیک پژواک با دارا بودن جمعی از مشاوران خبره، اساتید دانشگاه و درمانگران مفتخر است
+                        در خدمت شما
+                        عزیزان باشد. لازم به ذکر است که کلیه خدمات این مجموعه توسط متخصصان دوره دیده در زمینه های مختلف
+                        روانشناسی عرضه میگردد.</p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <p>آدرس : شیراز- خیابان نارون- کوچه۱۴- فرعی ۱۴/۳- انتهای کوچه</p>
+                    <p>تلفن : ۰۹۱۷۲۲۰۴۰۶۲- ۰۷۱۳۲۲۷۰۲۹۶</p>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11 d-flex justify-content-evenly">
+                    <ul class="p-0">
+                        <li>
+                            <a href="./index.html" class="active">صفحه اصلی</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">اخبار</a>
+                        </li>
+                        <li>
+                            <a href="./workshops.html">کارگاه ها</a>
+                        </li>
+                    </ul>
+                    <ul class="p-0">
+                        <li>
+                            <a href="./about-us.html">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html">تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="./index.html">قوانین و مقررات</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <img src="./images/footer-1.png" alt="پژواک,مجوز" />
+                    <img src="./images/footer-2.png" alt="پژواک,مجوز" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="./js/splide.min.js" type="text/javascript"></script>
+    <script src="./js/TweenMax.min.js" type="text/javascript"></script>
+    <script src="./js/main.min.js" type="text/javascript"></script>
+</body>
+
+</html>

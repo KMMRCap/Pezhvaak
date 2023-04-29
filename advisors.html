@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Imazh Branding Studio">
+
+    <link rel="icon" type="image/x-icon" href="./images/Daneshgah_shiraz.jpg">
+
+    <title>پژواک | مشاوران</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
+</head>
+
+<body id="advisors-page">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">کلینیک پژواک</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="./advisors.html">لیست مشاوران</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./workshops.html">کارگاه ها</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./news.html">اخبار و اعلامیه</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./about-us.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./contact-us.html">تماس با ما</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <i id="searchBarOpen" class="bi bi-search btn"></i>
+                    <a href="./reservation/date.html">
+                        <button class="btn text-white">نوبت دهی آنلاین</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="searchNav w-100 bg-white navbar closed">
+            <div class="position-relative w-100">
+                <div class="position-relative mx-auto">
+                    <input class="text-black bg-transparent p-3" placeholder="جستجوی نام پزشک، تخصص و خدمت پزشکی" />
+                    <i class="bi bi-search ms-3"></i>
+                </div>
+                <button id="searchBarClose" class="btn-close"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="container" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb my-4">
+            <li class="breadcrumb-item">
+                <a href="./index.html">صفحه اصلی</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">لیست مشاوران</li>
+        </ol>
+    </nav>
+
+    <!-- Main -->
+    <section id="advisors-section">
+        <div class="container">
+            <div class="row justify-content-center gx-4 gy-2">
+                <aside
+                    class="col-lg-3 col-12 d-flex flex-lg-column justify-content-between justify-content-lg-start align-items-start mb-4">
+                    <div class="p-sm-3 p-2 filter-box">
+                        <div class="header btn d-flex justify-content-between">
+                            <p class="d-inline-block ms-2 mb-0">بر اساس تخصص</p>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="body mt-2 px-2">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-1">
+                                <label class="form-check-label" for="flexCheck-1">
+                                    مشاوره خانواده
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-2">
+                                <label class="form-check-label" for="flexCheck-2">
+                                    مشاوره درسی
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-3">
+                                <label class="form-check-label" for="flexCheck-3">
+                                    کودک و نوجوان
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-4">
+                                <label class="form-check-label" for="flexCheck-4">
+                                    اعصاب و روان
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-5">
+                                <label class="form-check-label" for="flexCheck-5">
+                                    مشاوره ازدواج
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-6">
+                                <label class="form-check-label" for="flexCheck-6">
+                                    مشاوره یک
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-sm-3 p-2 mt-lg-4 filter-box">
+                        <div class="header btn d-flex justify-content-between">
+                            <p class="d-inline-block ms-2 mb-0">درجه علمی</p>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="body mt-2 px-2">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-7">
+                                <label class="form-check-label" for="flexCheck-7">
+                                    دکترای تخصصی
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-8">
+                                <label class="form-check-label" for="flexCheck-8">
+                                    کارشناسی ارشد
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck-9">
+                                <label class="form-check-label" for="flexCheck-9">
+                                    کارشناسی
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="col-lg-9 col-12">
+                    <div class="sort mb-3">
+                        <span>مرتب سازی براساس :</span>
+                        <button class="btn p-sm-3 p-1 active">پیشفرض</button>
+                        <button class="btn p-sm-3 p-1">بالاترین تجربه</button>
+                        <button class="btn p-sm-3 p-1">بیشترین امتیاز</button>
+                    </div>
+                    <div>
+                        <div class="card w-100 mb-3 p-sm-4 p-2">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-lg-8 col-12 d-flex flex-column justify-content-around">
+                                    <div
+                                        class="d-flex flex-md-row flex-column align-items-center justify-content-center justify-content-lg-start mb-lg-4 mb-3">
+                                        <img src="./images/advisor.png" alt="پژواک،مشاور" />
+                                        <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                            <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                            <p class="card-text mb-2 mt-sm-4 mt-2">عضو هیات علمی روانشناسی بالینی
+                                                دانشگاه شیراز
+                                            </p>
+                                            <p class="card-text">کد نظام پزشکی: ۱۶۴۸۲</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle"></i>
+                                            <span>مشاوره ازدواج</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle"></i>
+                                            <span>کودک و نوجوان</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle"></i>
+                                            <span>مشاوره خانواده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-5 col-lg-4 col-12 d-flex flex-lg-column flex-md-row flex-column align-items-center justify-content-around mt-lg-0 mt-3">
+                                    <div class="text-md-end text-center">
+                                        <div class="mb-lg-4 mb-2">
+                                            <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                            <span class="card-text">125 نفر</span>
+                                        </div>
+                                        <p class="card-text mb-2 mb-lg-3">۲۱ سال تجربه</p>
+                                        <p class="card-text mb-2 mb-lg-3">۱۷۶۵ مشاوره آنلاین موفق</p>
+                                    </div>
+                                    <a href="./advisor.html" class="w-100 px-3 px-sm-0 pb-1 pb-sm-0">
+                                        <button class="btn mt-lg-3 mt-0 w-100">مشاهده اطلاعات و دریافت نوبت</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-100 mb-3 p-sm-4 p-2">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-lg-8 col-12 d-flex flex-column justify-content-around">
+                                    <div
+                                        class="d-flex flex-md-row flex-column align-items-center justify-content-center justify-content-lg-start mb-lg-4 mb-3">
+                                        <img src="./images/advisor.png" alt="پژواک،مشاور" />
+                                        <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                            <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                            <p class="card-text mb-2 mt-sm-4 mt-2">عضو هیات علمی روانشناسی بالینی
+                                                دانشگاه شیراز
+                                            </p>
+                                            <p class="card-text">کد نظام پزشکی: ۱۶۴۸۲</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره ازدواج</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>کودک و نوجوان</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره خانواده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-5 col-lg-4 col-12 d-flex flex-lg-column flex-md-row flex-column align-items-center justify-content-around mt-lg-0 mt-3">
+                                    <div class="text-md-end text-center">
+                                        <div class="mb-lg-4 mb-2">
+                                            <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                            <span class="card-text">125 نفر</span>
+                                        </div>
+                                        <p class="card-text mb-2 mb-lg-3">۲۱ سال تجربه</p>
+                                        <p class="card-text mb-2 mb-lg-3">۱۷۶۵ مشاوره آنلاین موفق</p>
+                                    </div>
+                                    <a href="./advisor.html" class="w-100 px-3 px-sm-0 pb-1 pb-sm-0">
+                                        <button class="btn mt-lg-3 mt-0 w-100">مشاهده اطلاعات و دریافت نوبت</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-100 mb-3 p-sm-4 p-2">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-lg-8 col-12 d-flex flex-column justify-content-around">
+                                    <div
+                                        class="d-flex flex-md-row flex-column align-items-center justify-content-center justify-content-lg-start mb-lg-4 mb-3">
+                                        <img src="./images/advisor.png" alt="پژواک،مشاور" />
+                                        <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                            <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                            <p class="card-text mb-2 mt-sm-4 mt-2">عضو هیات علمی روانشناسی بالینی
+                                                دانشگاه شیراز
+                                            </p>
+                                            <p class="card-text">کد نظام پزشکی: ۱۶۴۸۲</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره ازدواج</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>کودک و نوجوان</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره خانواده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-5 col-lg-4 col-12 d-flex flex-lg-column flex-md-row flex-column align-items-center justify-content-around mt-lg-0 mt-3">
+                                    <div class="text-md-end text-center">
+                                        <div class="mb-lg-4 mb-2">
+                                            <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                            <span class="card-text">125 نفر</span>
+                                        </div>
+                                        <p class="card-text mb-2 mb-lg-3">۲۱ سال تجربه</p>
+                                        <p class="card-text mb-2 mb-lg-3">۱۷۶۵ مشاوره آنلاین موفق</p>
+                                    </div>
+                                    <a href="./advisor.html" class="w-100 px-3 px-sm-0 pb-1 pb-sm-0">
+                                        <button class="btn mt-lg-3 mt-0 w-100">مشاهده اطلاعات و دریافت نوبت</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-100 mb-3 p-sm-4 p-2">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-lg-8 col-12 d-flex flex-column justify-content-around">
+                                    <div
+                                        class="d-flex flex-md-row flex-column align-items-center justify-content-center justify-content-lg-start mb-lg-4 mb-3">
+                                        <img src="./images/advisor.png" alt="پژواک،مشاور" />
+                                        <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                            <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                            <p class="card-text mb-2 mt-sm-4 mt-2">عضو هیات علمی روانشناسی بالینی
+                                                دانشگاه شیراز
+                                            </p>
+                                            <p class="card-text">کد نظام پزشکی: ۱۶۴۸۲</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره ازدواج</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>کودک و نوجوان</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره خانواده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-5 col-lg-4 col-12 d-flex flex-lg-column flex-md-row flex-column align-items-center justify-content-around mt-lg-0 mt-3">
+                                    <div class="text-md-end text-center">
+                                        <div class="mb-lg-4 mb-2">
+                                            <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                            <span class="card-text">125 نفر</span>
+                                        </div>
+                                        <p class="card-text mb-2 mb-lg-3">۲۱ سال تجربه</p>
+                                        <p class="card-text mb-2 mb-lg-3">۱۷۶۵ مشاوره آنلاین موفق</p>
+                                    </div>
+                                    <a href="./advisor.html" class="w-100 px-3 px-sm-0 pb-1 pb-sm-0">
+                                        <button class="btn mt-lg-3 mt-0 w-100">مشاهده اطلاعات و دریافت نوبت</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-100 mb-3 p-sm-4 p-2">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-lg-8 col-12 d-flex flex-column justify-content-around">
+                                    <div
+                                        class="d-flex flex-md-row flex-column align-items-center justify-content-center justify-content-lg-start mb-lg-4 mb-3">
+                                        <img src="./images/advisor.png" alt="پژواک،مشاور" />
+                                        <div class="me-md-3 mt-md-0 mt-3 text-md-end text-center">
+                                            <h4 class="card-title">پروفسور محمد علی گودرزی</h4>
+                                            <p class="card-text mb-2 mt-sm-4 mt-2">عضو هیات علمی روانشناسی بالینی
+                                                دانشگاه شیراز
+                                            </p>
+                                            <p class="card-text">کد نظام پزشکی: ۱۶۴۸۲</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره ازدواج</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>کودک و نوجوان</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <i class="bi bi-circle text-primary"></i>
+                                            <span>مشاوره خانواده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-5 col-lg-4 col-12 d-flex flex-lg-column flex-md-row flex-column align-items-center justify-content-around mt-lg-0 mt-3">
+                                    <div class="text-md-end text-center">
+                                        <div class="mb-lg-4 mb-2">
+                                            <span class="advisor-rate text-white p-1 ms-1">90.3%</span>
+                                            <span class="card-text">125 نفر</span>
+                                        </div>
+                                        <p class="card-text mb-2 mb-lg-3">۲۱ سال تجربه</p>
+                                        <p class="card-text mb-2 mb-lg-3">۱۷۶۵ مشاوره آنلاین موفق</p>
+                                    </div>
+                                    <a href="./advisor.html" class="w-100 px-3 px-sm-0 pb-1 pb-sm-0">
+                                        <button class="btn mt-lg-3 mt-0 w-100">مشاهده اطلاعات و دریافت نوبت</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="mt-5" aria-label="Page navigation example">
+                        <ul class="pagination justify-content-lg-start justify-content-center pe-2">
+                            <li class="page-item ms-3">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active ms-3">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item ms-3">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item ms-3">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <i class="bi bi-chevron-left"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container pt-3 pb-5 mt-5 text-xl-end text-center">
+            <a class="navbar-brand" href="./index.html">کلینیک پژواک</a>
+            <div class="row justify-content-center gx-0 gx-lg-4 gy-4 mt-2">
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <p>کلینیک پژواک با دارا بودن جمعی از مشاوران خبره، اساتید دانشگاه و درمانگران مفتخر است
+                        در خدمت شما
+                        عزیزان باشد. لازم به ذکر است که کلیه خدمات این مجموعه توسط متخصصان دوره دیده در زمینه های مختلف
+                        روانشناسی عرضه میگردد.</p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <p>آدرس : شیراز- خیابان نارون- کوچه۱۴- فرعی ۱۴/۳- انتهای کوچه</p>
+                    <p>تلفن : ۰۹۱۷۲۲۰۴۰۶۲- ۰۷۱۳۲۲۷۰۲۹۶</p>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                    <a href="/" class="ms-2">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11 d-flex justify-content-evenly">
+                    <ul class="p-0">
+                        <li>
+                            <a href="./index.html">صفحه اصلی</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">اخبار</a>
+                        </li>
+                        <li>
+                            <a href="./workshops.html">کارگاه ها</a>
+                        </li>
+                    </ul>
+                    <ul class="p-0">
+                        <li>
+                            <a href="./about-us.html">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html">تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="./index.html">قوانین و مقررات</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-10 col-11">
+                    <img src="./images/footer-1.png" alt="پژواک,مجوز" />
+                    <img src="./images/footer-2.png" alt="پژواک,مجوز" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="./js/main.min.js" type="text/javascript"></script>
+</body>
+
+</html>

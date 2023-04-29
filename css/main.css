@@ -1,0 +1,1267 @@
+/* ----------------------------------------------------------------- */
+/* --------------------------- Common ------------------------------ */
+/* ----------------------------------------------------------------- */
+@font-face {
+  font-family: "Iransans";
+  src: url(../fonts/IRANSansWeb-FaNum.eot);
+  src: url(../fonts/IRANSansWeb-FaNum.ttf) format("embedded-opentype");
+  src: url(../fonts/IRANSansWeb-FaNum.woff) format("truetype");
+  src: url(../fonts/IRANSansWeb-FaNum.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+  src: url(../fonts/KalamehWeb_Regular.eot);
+  src: url(../fonts/KalamehWeb_Regular.ttf) format("embedded-opentype");
+  src: url(../fonts/KalamehWeb_Regular.woff) format("truetype");
+  src: url(../fonts/KalamehWeb_Regular.woff2) format("woff2");
+}
+
+* {
+  font-family: "Iransans" !important;
+  list-style: none;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+input:focus,
+select:focus {
+  box-shadow: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-p {
+  color: #5c5c5c;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+/* ---------------------- Footer ----------------------- */
+
+footer {
+  box-shadow: 0 5px 15px #e5e5e5;
+}
+
+footer p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+footer li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer i {
+  font-size: 22px;
+}
+
+footer .active {
+  font-weight: bold;
+}
+
+/* ------------------- Breadcrumb ----------------------- */
+
+.breadcrumb-item {
+  font-size: 14px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+/* ----------------------------------------------------------------- */
+/* --------------------------- Landing Page ------------------------ */
+/* ----------------------------------------------------------------- */
+
+/* ---------------------- Header ------------------------- */
+
+nav.navbar {
+  box-shadow: 0 5px 15px #e5e5e5;
+}
+
+#landing-page nav.navbar {
+  box-shadow: none;
+}
+
+.navbar {
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-brand {
+  font-family: "Kalameh";
+  font-size: 30px;
+  font-weight: 900;
+  color: #61c0dd !important;
+  -webkit-text-stroke: 1px;
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.navbar button.btn {
+  background: #61c0dd;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.bi-search {
+  color: #5c5c5c;
+  font-size: 20px !important;
+}
+
+.searchNav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.5s ease;
+}
+
+.searchNav.closed {
+  left: -100%;
+}
+
+.searchNav div:not(.w-100) {
+  width: 60%;
+}
+
+.searchNav input {
+  width: 100%;
+  border: 1px solid #5c5c5c;
+  border-radius: 10px;
+}
+
+.searchNav button {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ----------------------------- Banner ----------------------------- */
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#main-banner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#main-banner h1 {
+  font-weight: bold;
+}
+
+#main-banner div {
+  width: 60%;
+}
+
+#main-banner input {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#main-banner input::placeholder {
+  color: #efefefb2;
+  font-size: 1rem;
+}
+
+#main-banner i,
+.searchNav i {
+  position: absolute;
+  left: 0;
+  top: 23%;
+  opacity: 0.9;
+}
+
+#slider button {
+  z-index: 101;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: unset;
+  bottom: unset;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: fit-content;
+}
+
+/* --------------------------- Services ------------------------ */
+
+.card {
+  background: #ffffff;
+  box-shadow: 0 5px 15px #e5e5e5;
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card:not(.not-hover):hover {
+  border-bottom: 5px solid #61c0dd;
+  box-shadow: 0px 5px 15px #a7a7a7;
+}
+
+#landing-page .card-title {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+/* ------------------------------ Advisors ---------------------------- */
+
+.card .advisor-rate {
+  background: #e7734c;
+  border-radius: 5px;
+}
+
+.card span {
+  font-size: 14px;
+}
+
+#advisors span.muted {
+  color: #cbcbcb;
+}
+
+.card button {
+  border: 1px solid #61c0dd;
+  color: #61c0dd;
+  transition: 0.3s ease;
+}
+
+.card button:hover {
+  background: #e7734c;
+  color: white;
+  border-color: #e7734c;
+}
+
+#advisors .splide__list,
+#workshops .splide__list {
+  padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+}
+
+.splide__arrow {
+  top: unset;
+  bottom: 1rem;
+  background: transparent;
+  border: none !important;
+}
+
+.splide__arrow--prev {
+  right: unset !important;
+  left: 5% !important;
+}
+
+/* -------------------------------- Gallery -------------------------------- */
+
+#gallery img {
+  border-radius: 18px;
+  width: 100%;
+}
+
+#gallery .splide__list {
+  padding-bottom: 2rem !important;
+}
+
+#gallery {
+  box-shadow: 0 5px 15px #e5e5e5;
+}
+
+/* ---------------------------- Workshops ------------------------------ */
+
+#workshops h3,
+#news h3 {
+  font-weight: 700;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#workshops i,
+#news i {
+  opacity: 0.8;
+  color: #5c5c5c;
+  font-size: 20px;
+}
+
+#workshops img,
+#news img {
+  border-radius: 10px;
+}
+
+.bi::before,
+[class*=" bi-"]::before,
+[class^="bi-"]::before {
+  vertical-align: -5px;
+}
+
+/* ------------------------- Notes ------------------------------- */
+
+.slider-wrap {
+  min-height: 27rem;
+}
+#card-slider {
+  position: absolute;
+  width: 70%;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#card-slider .card-title {
+  font-weight: bold;
+}
+
+#card-slider .card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+#card-slider img {
+  border: 2px solid #61c0dd;
+  border-radius: 10rem;
+}
+
+/* ------------------------- News ------------------------------- */
+
+#news span {
+  color: #5c5c5c;
+}
+
+.image-card .card-body {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.image-card .backdrop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) -20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------ Advisors Page -------------------------- */
+/* ----------------------------------------------------------------- */
+
+.filter-box {
+  box-shadow: 0 5px 15px #e5e5e5;
+  border-radius: 15px;
+  background: white;
+}
+
+.filter-box i:before {
+  transition: 0.3s ease;
+}
+
+.filter-box i.closed::before {
+  transform: rotate(180deg);
+}
+
+.form-check .form-check-input {
+  float: right;
+  margin-left: 1em;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+}
+
+.form-check .form-check-label {
+  font-size: 14px;
+}
+
+.sort .active {
+  color: #61c0dd !important;
+}
+
+#advisors-section .card-title {
+  font-weight: 700;
+}
+
+.bi-circle {
+  color: #61c0dd !important;
+  font-size: 12px;
+}
+
+.bi-circle:before {
+  vertical-align: -3px;
+  font-weight: bold !important;
+}
+
+.pagination .page-link {
+  background: transparent;
+  color: black;
+  border-radius: 7px;
+  padding: 10px 18px;
+}
+
+.pagination .page-item.active .page-link {
+  background: #61c0dd;
+  color: white;
+  border: initial;
+}
+
+.pagination .page-link:first-child i {
+  margin-right: -3px;
+}
+
+.pagination .page-link:last-child i {
+  margin-left: -3px;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none !important;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------- Advisor Page -------------------------- */
+/* ----------------------------------------------------------------- */
+
+#advisor-section .card-title {
+  font-weight: bold;
+}
+
+#advisor-section .splide__slide {
+  border: 2px solid #efefef;
+  background: transparent;
+  border-radius: 15px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#advisor-section .splide__slide:hover {
+  border-color: #61c0dd;
+}
+
+#advisor-section .splide__slide.active {
+  border-color: #61c0dd;
+}
+
+#advisor-section .splide__slide span {
+  font-size: 11px;
+}
+
+#advisor-section .splide__arrow:hover {
+  background: initial;
+}
+
+#advisor-section .splide__arrow--prev {
+  right: -14px !important;
+  bottom: 0 !important;
+}
+
+#advisor-section .splide__arrow--next {
+  left: -14px !important;
+  bottom: 0 !important;
+}
+
+#advisor-section .nav-link,
+#reservation-advisor-page section .nav-link {
+  background: transparent;
+  color: black;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+#advisor-section .nav-link:hover,
+#reservation-advisor-page section .nav-link:hover {
+  background: #a2d3e2;
+  color: white;
+}
+
+#advisor-section .nav-link.active,
+#reservation-advisor-page section .nav-link.active {
+  background: #61c0dd;
+  color: white;
+  font-weight: normal;
+}
+
+#reservationModalOpener,
+#reservationModalOpener2 {
+  background: #e7734c;
+  border-color: #e7734c;
+  color: white;
+}
+
+#advisor-section aside .card-text {
+  text-align: justify;
+}
+
+.progress-cont span {
+  font-size: 13px;
+}
+
+.progress-bar {
+  background: #252525;
+  border-radius: 5px 0 0 5px;
+}
+
+#commentModalOpener:hover {
+  background: #e7734c;
+  border-color: #e7734c;
+}
+
+#advisor-section h1 {
+  font-weight: bold;
+}
+
+.bi-star-fill {
+  color: #cbcbcb;
+  font-size: 25px;
+}
+
+.rating-color {
+  color: #e7734c !important;
+}
+
+.sort button {
+  font-size: 13px;
+}
+
+.comments-cont.hidden {
+  display: none;
+}
+
+.comments-cont .bi-star-fill {
+  font-size: 15px;
+}
+
+.comments-cont span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.comments-cont label,
+.comments-cont i {
+  color: #cbcbcb;
+}
+
+.comments-cont button {
+  color: #61c0dd;
+  font-size: 12px;
+}
+
+.comments-cont button i {
+  color: #61c0dd;
+  font-size: 16px;
+}
+
+.comments-cont button:hover {
+  background: transparent;
+  color: #61c0dd;
+}
+
+.comments-cont p {
+  text-align: justify;
+}
+
+.load-more,
+.load-less {
+  color: white !important;
+  background: #61c0dd;
+  width: auto;
+}
+
+.load-more:hover,
+.load-less:hover {
+  background: #61c0dd !important;
+  border-color: #61c0dd !important;
+}
+
+.modal .submit,
+#reservation-date-page .submit,
+#reservation-advisor-page .submit {
+  background: #61c0dd;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.modal .submit:hover,
+#reservation-date-page .submit:hover,
+#reservation-advisor-page .submit:hover {
+  background: #e7734c;
+  border-color: #e7734c;
+}
+
+.modal .cancel,
+#reservation-date-page .cancel,
+#reservation-advisor-page .cancel {
+  background: transparent;
+  color: #61c0dd;
+}
+
+.modal-content {
+  border-radius: 15px;
+  border: 0;
+  overflow: hidden;
+  background: white;
+}
+
+#reservationModal .modal-header {
+  background: #61c0dd;
+  color: white;
+}
+
+#reservationModal .nav-pills {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+
+#reservationModal .nav-pills .nav-link {
+  color: #5c5c5c;
+  background: transparent;
+}
+
+#reservationModal .nav-pills .nav-link.active {
+  color: white;
+  background: #e7734c;
+}
+
+.modal input,
+.modal textarea {
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+}
+
+#commentModal .nav-link {
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  color: #cbcbcb;
+  font-size: 13px;
+  padding: 0.75rem;
+}
+
+#commentModal .nav-item:first-child .active {
+  color: white;
+  background: green;
+  border-color: green;
+}
+
+#commentModal .nav-item:last-child .active {
+  color: white;
+  background: red;
+  border-color: red;
+}
+
+.datepicker-plot-area {
+  box-shadow: none;
+  border: none;
+}
+
+.datepicker-navigator {
+  margin-bottom: 15px;
+}
+
+.pwt-btn-switch {
+  font-size: 16px;
+}
+
+.pwt-btn-next,
+.pwt-btn-prev {
+  font-size: 20px;
+}
+
+.datepicker-day-view .header-row {
+  border-bottom: 1px solid #cbcbcb;
+  height: 30px !important;
+}
+
+.table-days td span {
+  font-size: 14px;
+  margin-bottom: 8px !important;
+  border-radius: 15px !important;
+}
+
+.table-days td span:hover {
+  background: #61c0dd !important;
+  color: white !important;
+}
+
+.table-days .disabled span {
+  color: #cbcbcb !important;
+  background: transparent !important;
+}
+
+.table-days .disabled span:hover {
+  background: #efefef !important;
+  color: #cbcbcb !important;
+  cursor: no-drop !important;
+}
+
+.table-days .today span {
+  background: #e7734c !important;
+}
+
+.table-days .selected span {
+  background: #61c0dd !important;
+  text-shadow: none !important;
+}
+
+.month-item,
+.year-item {
+  border-radius: 15px !important;
+}
+
+.month-item:hover,
+.year-item:hover {
+  background: #61c0dd !important;
+  color: white !important;
+}
+
+.month-item-disable,
+.year-item-disable {
+  background: transparent !important;
+  color: #cbcbcb !important;
+}
+
+.month-item-disable:hover,
+.year-item-disable:hover {
+  background: #efefef !important;
+  color: #cbcbcb !important;
+  cursor: no-drop !important;
+}
+
+.month-item.selected,
+.year-item.selected {
+  background: #61c0dd !important;
+  text-shadow: none !important;
+}
+
+@import url("./bootstrap-icons.min.css");
+
+.rating > [id^="star"] {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 0 2px;
+  font-size: 2em;
+  font-family: bootstrap-icons;
+  content: "\F586";
+  cursor: pointer;
+}
+
+.rating > label {
+  color: #cbcbcb;
+}
+
+.rating > [id^="star"]:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #e7734c;
+}
+
+.rating > [id^="star"]:checked + label:hover,
+.rating > [id^="star"]:checked ~ label:hover,
+.rating > label:hover ~ [id^="star"]:checked ~ label,
+.rating > [id^="star"]:checked ~ label:hover ~ label {
+  color: #e3a692;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------ Contact Us Page ------------------------ */
+/* ----------------------------------------------------------------- */
+
+#contact-us-section .card input,
+#contact-us-section .card textarea {
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+}
+
+#contact-us-section .card button {
+  color: white;
+  background: #e7734c;
+  border-color: #e7734c;
+}
+
+#contact-us-section .card button:hover {
+  border-color: #61c0dd;
+}
+
+.contact-ways span {
+  font-size: 16px;
+}
+
+.contact-ways i {
+  font-size: 20px;
+  color: #61c0dd;
+}
+
+#contact-us-section iframe {
+  min-height: 16rem;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------ About Us Page -------------------------- */
+/* ----------------------------------------------------------------- */
+
+.banner {
+  border-radius: 15px;
+  overflow: hidden;
+  max-height: 50vh;
+}
+
+#about-us-section p,
+#news-id-section p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------ Workshops Page ------------------------- */
+/* ----------------------------------------------------------------- */
+
+.form-switch .form-check-input {
+  border-radius: 20px !important;
+  border: 1px solid #cbcbcb !important;
+  width: 4em !important;
+  background-color: transparent !important;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: #e7734c !important;
+  border: 1px solid #e7734c !important;
+}
+
+#workshops-section .card h6 {
+  font-weight: bold;
+}
+
+#workshops-section .btn-cont button {
+  border: 1px solid #61c0dd;
+  background: #61c0dd;
+  color: white;
+}
+
+#workshops-section h6 {
+  font-weight: 700;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#workshops-section .row .col-11.hidden {
+  display: none;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------- Workshop Page ------------------------- */
+/* ----------------------------------------------------------------- */
+
+#workshop-section .card-text {
+  font-size: 18px;
+  color: #252525;
+  text-align: justify;
+}
+
+#workshop-section i {
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------- */
+/* ----------------------------- News Page ------------------------- */
+/* ----------------------------------------------------------------- */
+
+#news-section i,
+#news-id-section i {
+  font-size: 17px;
+}
+
+#news-section p {
+  text-align: justify;
+}
+
+/* ----------------------------------------------------------------- */
+/* ----------------------------- News-Id Page ---------------------- */
+/* ----------------------------------------------------------------- */
+
+#news-id-section h5 {
+  font-weight: bold;
+}
+
+#news-id-section img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- Reservation Page ------------------------- */
+/* ----------------------------------------------------------------- */
+
+#reservation-date-page .navbar-brand,
+#reservation-advisor-page .navbar-brand {
+  font-size: 40px;
+}
+
+#reservation-date-page,
+#reservation-advisor-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#reservation-date-page .card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#reservation-advisor-page section {
+  width: 55%;
+}
+
+/* ---- Advisor ---- */
+
+#reservation-advisor-page section span {
+  font-size: 20px;
+  color: #5c5c5c;
+}
+
+#reservation-advisor-page select {
+  border: 1px solid #cbcbcb;
+  width: 50%;
+  border-radius: 10px;
+  background-position: left 0.75rem center;
+}
+
+#calendarModalOpener2 {
+  border: 2px solid #61c0dd;
+  border-radius: 15px;
+}
+
+#calendarModalOpener2:hover {
+  border-color: #e7734c;
+  background: #e7734c !important;
+}
+
+#calendarModalOpener2:hover span {
+  color: white;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------- Responsive Styles ------------------------------ */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width: 575.98px) {
+
+  #slider {
+      height: 20rem;
+  }
+
+  #main-banner div,
+  .searchNav div:not(.w-100) {
+      width: 85%;
+  }
+
+  .searchNav div:not(.w-100) {
+      margin-right: 2% !important;
+  }
+
+  input::placeholder {
+      font-size: 10px !important;
+  }
+
+  .splide__arrow--prev {
+      left: 12% !important;
+  }
+
+  footer p {
+      text-align: center;
+  }
+
+  .filter-box {
+      width: 48%;
+  }
+
+  .filter-box p {
+      font-size: 14px;
+  }
+
+  .filter-box label {
+      font-size: 12px !important;
+  }
+
+  .sort span,
+  .sort button {
+      font-size: 12px;
+  }
+
+  #advisors-section img {
+      width: 20%;
+  }
+
+  #advisors-section .card span {
+      font-size: 10px;
+  }
+
+  #advisors-section .card-text {
+      font-size: 10px;
+  }
+
+  #advisors-section .card button {
+      font-size: 10px;
+  }
+
+  #about-us-section p{
+      font-size: 16px;
+  }
+
+  #workshop-section h2{
+      font-size: 20px;
+  }
+
+  #workshop-section p,
+  #reservation-date-page p{
+      font-size: 16px !important;
+  }
+  
+  #reservation-date-page .card{
+      width: 95%;
+  }
+
+  #reservation-advisor-page section{
+      width: 95%;
+  }
+
+  #reservation-advisor-page select{
+      width: 100%;
+  }
+
+  .slider-wrap{
+      min-height: 37rem;
+  }
+
+  #card-slider{
+      left: 40%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  #slider {
+      height: 20rem;
+  }
+
+  #main-banner div,
+  .searchNav div:not(.w-100) {
+      width: 80%;
+  }
+
+  .searchNav div:not(.w-100) {
+      margin-right: 1% !important;
+  }
+
+  input::placeholder {
+      font-size: 12px !important;
+  }
+
+  .splide__arrow--prev {
+      left: 8% !important;
+  }
+
+  footer p {
+      text-align: center;
+  }
+
+  .filter-box {
+      width: 48%;
+  }
+
+  #advisors-section img {
+      width: 20%;
+  }
+
+  #workshop-section h2{
+      font-size: 20px;
+  }
+
+  #workshop-section p{
+      font-size: 16px !important;
+  }
+  
+  #reservation-date-page .card{
+      width: 85%;
+  }
+
+  #reservation-advisor-page section{
+      width: 75%;
+  }
+
+  #reservation-advisor-page select{
+      width: 100%;
+  }
+
+  .slider-wrap{
+      min-height: 37rem;
+  }
+
+  #card-slider{
+      width: 90%;
+      left: 43%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  #slider {
+      height: 20rem;
+  }
+
+  #main-banner div,
+  .searchNav div:not(.w-100) {
+      width: 70%;
+  }
+
+  .searchNav div:not(.w-100) {
+      margin-right: 1% !important;
+  }
+
+  input::placeholder {
+      font-size: 12px !important;
+  }
+
+  .splide__arrow--prev {
+      left: 7% !important;
+  }
+
+  footer p {
+      text-align: center;
+  }
+
+  .filter-box {
+      width: 48%;
+  }
+
+  #advisors-section .card a {
+      width: auto !important;
+  }
+  
+  #reservation-date-page .card{
+      width: 70%;
+  }
+
+  #reservation-advisor-page section{
+      width: 90%;
+  }
+
+  #card-slider{
+      width: 85%;
+      left: 45%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .navbar-nav {
+      padding-right: 10px;
+  }
+
+  .nav-link {
+      font-size: 14px;
+  }
+
+  footer p {
+      text-align: center;
+  }
+
+  #advisors-section aside {
+      align-items: initial !important;
+  }
+
+  #advisors-section .card button {
+      font-size: 14px;
+  }
+
+  #advisor-section img {
+      width: 20%;
+  }
+
+  #workshop-section h2{
+      font-size: 20px;
+  }
+
+  #workshop-section p{
+      font-size: 16px !important;
+  }
+
+  #reservation-advisor-page section{
+      width: 70%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+  #advisors-section aside {
+      align-items: initial !important;
+  }
+  #reservation-advisor-page section{
+      width: 60%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1700px) {
+
+  #advisors-section aside {
+      align-items: initial !important;
+  }
+}
+
+@media (min-width: 1700.02px) {
+
+  #advisors-section aside {
+      align-items: initial !important;
+  }
+
+  #reservation-advisor-page section{
+      width: 40%;
+  }
+}
